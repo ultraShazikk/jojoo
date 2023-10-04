@@ -1,0 +1,39 @@
+.header {
+    padding: 44px 0;
+}
+
+.container {
+    margin-top: 1px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item+&__item {
+        margin-left: 33px;
+    }
+
+    &__link {
+        color: #83888F;
+        font-family: "Barlow";
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        text-transform: uppercase;
+
+        &:hover {
+            color: #333D4B;
+        }
+    }
+}
